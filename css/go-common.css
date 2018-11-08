@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexming.css");
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexkai.css");
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css");
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+ 
+.breadcrumbs.new{
+    font-size: 14px;
+    font-weight: 600;
+    display:block;
+    color: #969696;
+    margin:10px 0;
+    padding: 0;
+}
+ .breadcrumbs.new a{
+ color: #969696;
+}
+ .breadcrumbs.new i{
+    font-size: 16px;
+    display:inline-block;
+    margin:0 2px 0 0;
+    color: #969696;
+}
+ .breadcrumbs.new h1{
+    display:inline-block;
+    color: #ffffff;
+    font-size: 15px;
+      font-weight: 500;
+}
+ .breadcrumbs.new h1 a{
+    color: #e8e8e8;
+}

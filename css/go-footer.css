@@ -1,0 +1,161 @@
+body {
+    font-family: "微軟正黑體";
+    margin: 0; padding: 0px; 
+}
+
+ .containBoxer{
+    height:400px;
+    background-color: #f2f2f2;
+}
+
+/*footer區塊樣式*/
+#go-footer {
+    float: left;
+    display: block;
+    z-index: 10;
+    margin:40px 0 0 0;
+    padding:0;
+    width:100%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+#go-footer  .containBox{
+margin:0px auto;
+    width:62%;
+}
+#go-footer  hr{
+width: 100%;
+    height:1.5px;
+    border: 0px solid ;
+    margin:30px 0 30px 0;
+  background-color: rgba(199, 199, 199, 0.5);
+}
+
+#go-footer .ft-left.dp-mob{
+display: none;
+}
+/*footer左側圖片*/
+#go-footer .ft-left{
+    box-sizing: border-box;
+    display:inline-block;
+    float:left;
+    margin:-8px 0 0 0 ;
+    width:25%;
+}
+#go-footer .ft-left img{
+    box-sizing: border-box;
+    display:block;
+    float:left;
+    margin:0 0 20px 0 ;
+    width: 75%;
+}
+/*footer右側文字區塊*/
+#go-footer .ft-left {
+float:left;
+display:inline-block;
+width:25%;
+}
+
+#go-footer .ft-left p{
+margin:6px 0 0 0;
+    padding:0 10px 0 0;
+    font-size: 0.8rem;
+}
+#go-footer .ft-left a {
+ color:#898989;
+    transition:  .3s all ;
+}
+   
+#go-footer .ft-left .cols span{
+display:inline-block;
+font-size: 0.8rem;
+font-weight: bold;
+color: #606060;
+margin:0 0 0px 0;
+}
+
+
+
+/*footer右側文字區塊*/
+#go-footer .ft-right{
+    float:left;
+    width:75%;
+    max-width:1000px;
+    display:inline-block;
+    margin:0px 0  0 0px;
+    box-sizing: border-box;
+}
+
+#go-footer .ft-right .cols{
+float:right;
+display:inline-block;
+width:20%;
+ margin:0px 0  0 68px;
+}
+
+#go-footer .ft-right p{
+margin:13px 0 0 0;
+    font-size: 0.8rem;
+    letter-spacing: 2.5px;
+}
+#go-footer .ft-right a {
+ color:#5d5d5d;
+    transition: .3s all ;
+}
+#go-footer .ft-right .cols h1{
+display:block;
+font-size: 15px;
+font-weight: bold;
+color: #0f0f0f;
+margin:0 0 18px 0;
+ letter-spacing: 2px;
+}
+
+
+
+/*footer底部文字區塊*/
+#go-footer .ft-bottom{
+width:100%;
+height:80px;
+    float: left;
+}
+#go-footer .ft-bottom .cols {
+line-height: 40px;
+    float: left;
+    color:#000000;
+ display:inline-block;
+    width:30%;
+}
+#go-footer .ft-bottom .cols i{
+    line-height: 40px;
+margin:0 0  0 15px ;
+}
+#go-footer .ft-bottom .cols p{
+color:#676767;
+    font-size: .8rem;
+    margin:0;
+}
+    #go-footer .ft-bottom .cols img{
+    width:11%;
+        line-height: 20px;
+    margin: 4% 0 0 0;
+float:right ;
+}
+
+
+/* 以下共用 */
+
+
+#go-footer  a:hover{
+    color:#191919;
+
+}
+/* Change the link color to #111 (black) on hover */
+
+    .clearfix{
+        clear: both;
+    }
+
+
+
+

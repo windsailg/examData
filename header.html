@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>header</title>
+
+
+<link rel="stylesheet" href="css/go-header.css">
+<link rel="stylesheet" href="css/go-responsive.css">
+<link rel="stylesheet" href="css/go-common.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/page.css">
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+<script src="js/jquery.colorbox-min.js"></script>
+
+</head>
+    
+<body >
+    <header id="go-header" class="header">
+<div class="containBox">
+<!---sliderNav--->
+<span id="gonavopen" class="navopen" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="goSidenav-mask" class="sidenav-mask" onclick="closeNav()"></div>
+      <div id="goSidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+          <!---
+        <a href="#">首頁</a>
+        <a href="#">升學考試</a>
+        <a href="#">公職特考</a>
+        <a href="#">國營就業</a>
+        <a href="#">專技證照</a>
+        <a href="#">學習進修</a>
+          
+-->
+          
+<ul class="sn-lists">
+
+  <li class="sn-lists-container">
+      <a class="sn-folder" href="#folder-1"><span><i class="fas fa-caret-right"></i></span>精選課程</a>
+      <div class="cf"></div>
+    <div id="folder-1" class="sn-folders" >
+    <ul >
+        <li><span><i class="fas fa-caret-down"></i>研究所</span></li>
+        <li><a href="#">理工研究所</a></li>
+        <li><a href="#">商管研究所</a></li>
+        <li><a href="#">文科藝術傳播</a></li>
+        <li><a href="#">工轉商　</a></li>
+        <li><a href="#">研究所題庫班</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>大學轉學考</span></li>
+        <li><a href="#">理工學院</a></li>
+        <li><a href="#">商管學院</a></li>
+        <li><a href="#">文科藝術傳播</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>公職考試</span></li>
+        <li><a href="#">高考/三等</a></li>
+        <li><a href="#">普考/四等</a></li>
+        <li><a href="#">初考/五等</a></li>
+        <li><a href="#">外交特考</a></li>
+        <li><a href="#">司法特考</a></li>
+        <li><a href="#">鐵路特考</a></li>
+        <li><a href="#">關務特考</a></li>
+        <li><a href="#">調查局特考</a></li>
+        <li><a href="#">國安局特考</a></li>
+        <li><a href="#">一般警察特考</a></li>
+        <li><a href="#">稅務特考</a></li>
+        <li><a href="#">國考題庫班</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>就業考試</span></li>
+        <li><a href="#">國營事業專班</a></li>
+        <li><a href="#">台電養成班</a></li>
+        <li><a href="#">中鋼集團</a></li>
+        <li><a href="#">中華郵政</a></li>
+        <li><a href="#">中華電信</a></li>
+        <li><a href="#">台灣菸酒</a></li>
+        <li><a href="#">中油雇員</a></li>
+        <li><a href="#">自來水評價人員</a></li>
+        <li><a href="#">銀行招考</a></li>
+        <li><a href="#">捷運　　　</a></li>
+        <li><a href="#">台灣港務公司</a></li>
+        <li><a href="#">農田水利會</a></li>
+        <li><a href="#">農會　　　</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>專業證照</span></li>
+        <li><a href="#">國際證照</a></li>
+        <li><a href="#">國家證照</a></li>
+        <li><a href="#">技師執照</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>終身學習</span></li>
+        <li><a href="#">美語　　</a></li>
+        <li><a href="#">日語　　</a></li>
+        <li><a href="#">學習方法</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>在職進修</span></li>
+        <li><a href="#">研究方法</a></li>
+        <li><a href="#">行銷課程</a></li>
+        <li><a href="#">商業溝通</a></li>
+        <li><a href="#">婚禮課程</a></li>
+        <li><a href="#">產業情報研究</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>書審口試輔導</span></li>
+        <li><a href="#">大學升研究所</a></li>
+        <li><a href="#">高中升大學</a></li>
+    </ul>
+</div>
+</li>
+
+   <li class="sn-lists-container">
+      <a class="sn-folder" href="#folder-2"><span><i class="fas fa-caret-right"></i></span>熱門講座</a>
+      <div class="cf"></div>
+    <div id="folder-2" class="sn-folders" >
+        <ul class="sn-link-title">
+        <li><a href="#"><i class="fas fa-caret-right"></i>公職考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>國營考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>升學類　</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>終身學習</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>高中升大</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>千碩課程</a></li>
+    </ul>
+</div>
+</li>   
+
+       <li class="sn-lists-container">
+      <a class="sn-folder" href="#folder-3"><span><i class="fas fa-caret-right"></i></span>熱門講座</a>
+      <div class="cf"></div>
+    <div id="folder-3" class="sn-folders" >
+        <ul class="sn-link-title">
+        <li><a href="#"><i class="fas fa-caret-right"></i>公職考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>國營考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>升學類　</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>終身學習</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>高中升大</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>千碩課程</a></li>
+    </ul>
+</div>
+</li>   
+
+      <li class="sn-lists-container">
+      <a class="sn-folder" href="#folder-6"><span><i class="fas fa-caret-right"></i></span>精選課程</a>
+      <div class="cf"></div>
+    <div id="folder-6" class="sn-folders" >
+    <ul >
+        <li><span><i class="fas fa-caret-down"></i>研究所</span></li>
+        <li><a href="#">理工研究所</a></li>
+        <li><a href="#">商管研究所</a></li>
+        <li><a href="#">文科藝術傳播</a></li>
+        <li><a href="#">工轉商　</a></li>
+        <li><a href="#">研究所題庫班</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>大學轉學考</span></li>
+        <li><a href="#">理工學院</a></li>
+        <li><a href="#">商管學院</a></li>
+        <li><a href="#">文科藝術傳播</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>公職考試</span></li>
+        <li><a href="#">高考/三等</a></li>
+        <li><a href="#">普考/四等</a></li>
+        <li><a href="#">初考/五等</a></li>
+        <li><a href="#">外交特考</a></li>
+        <li><a href="#">司法特考</a></li>
+        <li><a href="#">鐵路特考</a></li>
+        <li><a href="#">關務特考</a></li>
+        <li><a href="#">調查局特考</a></li>
+        <li><a href="#">國安局特考</a></li>
+        <li><a href="#">一般警察特考</a></li>
+        <li><a href="#">稅務特考</a></li>
+        <li><a href="#">國考題庫班</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>就業考試</span></li>
+        <li><a href="#">國營事業專班</a></li>
+        <li><a href="#">台電養成班</a></li>
+        <li><a href="#">中鋼集團</a></li>
+        <li><a href="#">中華郵政</a></li>
+        <li><a href="#">中華電信</a></li>
+        <li><a href="#">台灣菸酒</a></li>
+        <li><a href="#">中油雇員</a></li>
+        <li><a href="#">自來水評價人員</a></li>
+        <li><a href="#">銀行招考</a></li>
+        <li><a href="#">捷運　　　</a></li>
+        <li><a href="#">台灣港務公司</a></li>
+        <li><a href="#">農田水利會</a></li>
+        <li><a href="#">農會　　　</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>專業證照</span></li>
+        <li><a href="#">國際證照</a></li>
+        <li><a href="#">國家證照</a></li>
+        <li><a href="#">技師執照</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>終身學習</span></li>
+        <li><a href="#">美語　　</a></li>
+        <li><a href="#">日語　　</a></li>
+        <li><a href="#">學習方法</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>在職進修</span></li>
+        <li><a href="#">研究方法</a></li>
+        <li><a href="#">行銷課程</a></li>
+        <li><a href="#">商業溝通</a></li>
+        <li><a href="#">婚禮課程</a></li>
+        <li><a href="#">產業情報研究</a></li>
+    </ul>
+
+    <ul>
+        <li><span><i class="fas fa-caret-down"></i>書審口試輔導</span></li>
+        <li><a href="#">大學升研究所</a></li>
+        <li><a href="#">高中升大學</a></li>
+    </ul>
+</div>
+</li>
+
+   <li class="sn-lists-container">
+      <a class="sn-folder" href="#folder-4"><span><i class="fas fa-caret-right"></i></span>熱門講座</a>
+      <div class="cf"></div>
+    <div id="folder-4" class="sn-folders" >
+        <ul class="sn-link-title">
+        <li><a href="#"><i class="fas fa-caret-right"></i>公職考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>國營考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>升學類　</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>終身學習</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>高中升大</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>千碩課程</a></li>
+    </ul>
+</div>
+</li>   
+
+       <li class="sn-lists-container">
+      <a class="sn-folder" href="#folder-5"><span><i class="fas fa-caret-right"></i></span>熱門講座</a>
+      <div class="cf"></div>
+    <div id="folder-5" class="sn-folders" >
+        <ul class="sn-link-title">
+        <li><a href="#"><i class="fas fa-caret-right"></i>公職考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>國營考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>升學類　</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>終身學習</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>高中升大</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>千碩課程</a></li>
+    </ul>
+</div>
+</li>   
+
+    <a  class="sn-link" href="#">法政專區</a>
+          </ul>
+            
+          
+          
+    </div>     
+                    <!---sliderNav--->
+                <div class="logo">
+                    <a href="#">
+                    <img src="img/tkbgo_logo.png"
+                    ></a>
+            </div>
+
+                    <ul class="header-nav">
+                         <li class="navs1">
+<a href="#">精選課程<i class="fas fa-caret-down"></i></a>
+<div class="nav-dropdown">
+    <div class="nd-box">
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>研究所</span>
+    <ul>
+        <li><a href="#">理工研究所</a></li>
+        <li><a href="#">商管研究所</a></li>
+        <li><a href="#">文科藝術傳播</a></li>
+        <li><a href="#">工轉商　</a></li>
+        <li><a href="#">研究所題庫班</a></li>
+    </ul>
+        </div>
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>大學轉學考</span>
+    <ul>
+        <li><a href="#">理工學院</a></li>
+        <li><a href="#">商管學院</a></li>
+        <li><a href="#">文科藝術傳播</a></li>
+    </ul>
+        </div>
+    <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>公職考試</span>
+    <ul>
+        <li><a href="#">高考/三等</a></li>
+        <li><a href="#">普考/四等</a></li>
+        <li><a href="#">初考/五等</a></li>
+        <li><a href="#">外交特考</a></li>
+        <li><a href="#">司法特考</a></li>
+        <li><a href="#">鐵路特考</a></li>
+        <li><a href="#">關務特考</a></li>
+        <li><a href="#">調查局特考</a></li>
+        <li><a href="#">國安局特考</a></li>
+        <li><a href="#">一般警察特考</a></li>
+        <li><a href="#">稅務特考</a></li>
+        <li><a href="#">國考題庫班</a></li>
+    </ul>
+        </div>
+        
+            <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>就業考試</span>
+    <ul>
+        <li><a href="#">國營事業專班</a></li>
+        <li><a href="#">台電養成班</a></li>
+        <li><a href="#">中鋼集團</a></li>
+        <li><a href="#">中華郵政</a></li>
+        <li><a href="#">中華電信</a></li>
+        <li><a href="#">台灣菸酒</a></li>
+        <li><a href="#">中油雇員</a></li>
+        <li><a href="#">自來水評價人員</a></li>
+        <li><a href="#">銀行招考</a></li>
+        <li><a href="#">捷運　　　</a></li>
+        <li><a href="#">台灣港務公司</a></li>
+        <li><a href="#">農田水利會</a></li>
+        <li><a href="#">農會　　　</a></li>
+    </ul>
+        </div>
+        
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>專業證照</span>
+    <ul>
+        <li><a href="#">國際證照</a></li>
+        <li><a href="#">國家證照</a></li>
+        <li><a href="#">技師執照</a></li>
+    </ul>
+        </div>
+        
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>終身學習</span>
+    <ul>
+        <li><a href="#">美語　　</a></li>
+        <li><a href="#">日語　　</a></li>
+        <li><a href="#">學習方法</a></li>
+    </ul>
+        </div>
+        
+        
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>在職進修</span>
+    <ul>
+        <li><a href="#">研究方法</a></li>
+        <li><a href="#">行銷課程</a></li>
+        <li><a href="#">商業溝通</a></li>
+        <li><a href="#">婚禮課程</a></li>
+        <li><a href="#">產業情報研究</a></li>
+    </ul>
+        </div> 
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>書審口試輔導</span>
+    <ul>
+        <li><a href="#">大學升研究所</a></li>
+        <li><a href="#">高中升大學</a></li>
+    </ul>
+        </div> 
+    </div>
+    </div>
+                             
+</li>
+<li class="navs2"><a href="#">熱門講座<i class="fas fa-caret-down"></i></a>
+<div class="nav-dropdown">                
+    <div class="nd-box">
+        <div class="nd-lists-type2">
+    <ul>
+        <li><a href="#"><i class="fas fa-caret-right"></i>公職考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>國營考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>升學類　</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>終身學習</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>高中升大</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>千碩課程</a></li>
+    </ul>
+        </div>
+    </div>
+    </div>     
+                        </li>
+                       <li class="navs3"><a href="#">研究所升學<i class="fas fa-caret-down"></i></a>
+ <div class="nav-dropdown">                
+    <div class="nd-box">
+        <div class="nd-lists-type2">
+    <ul>
+        <li><a href="#"><i class="fas fa-caret-right"></i>轉學考　</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>研究所　</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>甄試　　</a></li>
+    </ul>
+        </div>
+    </div>
+    </div>                       
+                        </li> 
+                        <li class="navs4"><a href="#">公職就業<i class="fas fa-caret-down"></i></a>
+<div class="nav-dropdown">
+    <div class="nd-box">
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>考試日程表<br>(簡章)</span>
+    <ul>
+        <li><a href="#">108年　　</a></li>
+        <li><a href="#">107年　　</a></li>
+        <li><a href="#">106年　　</a></li>
+        <li><a href="#">105年　　</a></li>
+    </ul>
+        </div>
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>考試資訊</span>
+    <ul>
+        <li><a href="#">公職考試</a></li>
+        <li><a href="#">國營聯招</a></li>
+        <li><a href="#">就業考試</a></li>
+        <li><a href="#">銀行考試</a></li>
+        <li><a href="#">專業證照</a></li>
+    </ul>
+        </div>
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>考試科目組合</span>
+    <ul>
+        <li><a href="#">國家考試</a></li>
+        <li><a href="#">國營事業</a></li>
+
+    </ul>
+        </div> 
+        <div class="nd-lists">
+        <span><i class="fas fa-caret-right"></i>各類考題下載</span>
+    <ul>
+        <li><a href="#">公務人員考試</a></li>
+        <li><a href="#">國營事業甄試</a></li>
+        <li><a href="#">技師就業證照</a></li>
+    </ul>
+        </div>    
+        
+    </div>
+    </div>
+
+                        </li>
+                        <li class="navs5"><a href="#">最新消息<i class="fas fa-caret-down"></i></a>
+ <div class="nav-dropdown">                
+    <div class="nd-box">
+        <div class="nd-lists-type2">
+    <ul>
+        <li><a href="#"><i class="fas fa-caret-right"></i>公職考試消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>國營事業消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>研究所最新消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>轉學考最新消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>高升大最新消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>銀行考試消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>日語專區最新消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>美語專區最新消息</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>TKBgo快報</a></li>
+    </ul>
+        </div>
+    </div>
+    </div>                   
+                        </li>
+                        <li class="navs6"><a href="#">線上書城<i class="fas fa-caret-down"></i></a>
+ <div class="nav-dropdown">                
+    <div class="nd-box">
+        <div class="nd-lists-type2">
+    <ul>
+        <li><a href="#"><i class="fas fa-caret-right"></i>升學考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>公職考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>就業考試</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>專業教科書</a></li>
+        <li><a href="#"><i class="fas fa-caret-right"></i>高中升大學</a></li>
+
+    </ul>
+        </div>
+    </div>
+    </div>  
+                        </li>
+                         <li class="navs7"><a href="#">法政專區</a></li>
+                        
+                        
+                  </ul>
+
+    
+            
+    <div class="member">
+            <div class="member-element onlineService dp-tab tc">
+     <img src="img/uico2.png">
+    <span>線上諮詢</span>
+            </div>
+                
+            <div class="member-element login dp-tab tc">
+    登入
+            </div>
+                
+            <div class="member-element account dp-tab tc">
+    帳戶
+            </div>
+
+        
+        <div class="member-element dp-tab">
+            
+
+         
+            <a class="cart-btn" href="#"><img src="img/uico3.png"></a>
+
+            <div class="member-searchBox">
+         <button  class="sub-btn"  type="submin" >
+                   <img src="img/uico1.png">
+        </button>
+                        <input  class="srh-blk"  type="text" name="keyword"  placeholder="keyword" >
+</div>
+
+        </div>
+                
+                
+                
+                
+                
+            <div class="member-element onlineService dp-mob tc">
+                 <img src="img/uico2.png">
+
+            </div>
+                
+                
+              <div class="member-element dp-mob">
+                    <button  class="login-btn"  >
+                    <img src="img/uico4.png">
+                    </button>  
+                  
+                   <a  class="sub-btn link"  type="submin"  href="#">
+                   <img src="img/uico3.png">
+                  </a>
+                  
+                    <a id="openSearch" class="sub-btn search"   onclick="openSearch()" >
+                    <img src="img/uico1.png">
+                    </a>
+                  
+
+
+                  
+                </div>
+
+                
+                
+                
+            </div>
+            
+            </div>
+        
+
+
+     <div class="cf"></div>
+        
+        
+        
+        <!---
+                   <div class="containBox ">
+                  
+            <div class="tabZone dp-mob">
+                
+                <a href="#">
+                    <div class="ez-col">
+                    <i class="fas fa-home"></i>
+                     <h1>首頁</h1><br>
+                </div>             
+                   </a>   
+                
+                <a href="#">
+                <div class="ez-col">
+                    <i class="fas fa-graduation-cap"></i>
+                 <h1>升學考試</h1><br>
+                </div>
+                      </a>  
+                    <a href="#">
+                 <div class="ez-col">
+                    <i class="fas fa-university"></i>
+                     <h1>公職特考</h1><br>
+                </div>
+                  </a>  
+                
+                    <a href="#">
+                  <div class="ez-col">
+                    <i class="fas fa-building"></i>
+                     <h1>國營就業</h1><br>
+                </div>               
+                  </a>  
+                
+                    <a href="#">
+                  <div class="ez-col">
+                    <i class="fas fa-id-card"></i>
+                     <h1>專技證照</h1><br>
+                </div>
+                  </a>  
+   
+            </div>    
+                      
+                            <div class="cf"></div>
+                        <div class="tabZone dp-tab">
+                
+                <a href="#">
+                <div class="ez-col">
+                    <img src="img/ez-ico1.png">
+                 <h1>升學考試</h1><br>
+                    <span>GRADUATE INSTITUTE</span>
+                    <i class="fas fa-angle-right"></i>
+                </div>
+                    </a>
+
+                    <a href="#">
+                 <div class="ez-col">
+                    <img src="img/ez-ico2.png">
+                     <h1>公職特考</h1><br>
+                     <span>CIVIL SERVICE EXAMS  </span>
+                     <i class="fas fa-angle-right"></i>
+                </div>
+                        </a>
+                
+                        <a href="#">
+                  <div class="ez-col">
+                    <img src="img/ez-ico3.png">
+                     <h1>國營就業</h1><br>
+                     <span>GRADUATE INSTITUTE</span>
+                      <i class="fas fa-angle-right"></i>
+                </div>               
+                            </a>
+                
+                            <a href="#">
+                  <div class="ez-col">
+                    <img src="img/ez-ico4.png">
+                     <h1>專技證照</h1><br>
+                     <span>CIVIL SERVICE EXAMS  </span>
+                      <i class="fas fa-angle-right"></i>
+                </div>
+                </a>
+                                
+                                <a href="#">
+                 <div class="ez-col">
+                    <img src="img/ez-ico5.png">
+                     <h1>學習進修</h1><br>
+                     <span>GRADUATE INSTITUTE</span>
+                     <i class="fas fa-angle-right"></i>
+                </div>                
+                                </a>
+                                    
+            </div>                   
+                       
+        </div>      
+        --->
+        
+        
+        
+     <div class="cf"></div>
+        
+        
+</header>
+
+    
+    
+<div class="headBlock"> </div>
+    <!----
+            <div id="searchBox-tab" class="searchBox-tab dp-mob">
+                    <div class="sb-container">
+                 <input  class="srh-blk"  type="text" name="keyword"  placeholder="Keyword search" >
+                    <button  class="sub-btn"  type="submin" >
+                    搜尋
+                    </button>
+                        </div>
+        </div>
+    -->
+           <div id="searchBox" class="searchBox dp-mob">
+                    <div class="sb-container">
+                        <div class="sb-mob">
+                 <input  class="srh-blk"  type="text" name="keyword"  placeholder="Keyword search" >
+                    <button  class="sub-btn"  type="submin" >
+                     搜尋
+                    </button>
+                            </div>
+                        </div>
+                        
+        </div>
+    
+ <div id="searchBox2" class="searchBox2 dp-mob"> </div>
+<div class="clearfix"></div>
+
+    
+
+
+
+
+
+<script>
+    
+        $(function(){
+$('.sn-folder').click(function(){
+var _this= $(this).attr('href');
+var thisname =$(this).find('span');    
+if($(_this).css("display")=="none"){
+$(_this).slideDown();
+$(thisname).html('<i class="fas fa-caret-down"></i>');
+}else{
+$(_this).slideUp();
+$(thisname).html('<i class="fas fa-caret-right"></i>');
+}
+return false;
+});
+});
+
+    /*手機版展開動作*/
+   
+  function openSearch() {
+    // $('#searchBox').slideToggle(200);
+      
+    $('#searchBox').fadeToggle(300);
+
+  //  $('#searchBox2').slideToggle(100);
+   //    $('#searchBox').slideToggle(100);
+      
+};
+    
+    function openNav() {
+         document.getElementById("goSidenav").style.width = "320px";
+        document.body.style['overflow-y'] = 'hidden';
+        $('#goSidenav-mask').fadeIn(200);
+
+ $('.closebtn').slideDown(200);
+
+};
+
+function closeNav() {
+    document.getElementById("goSidenav").style.width = "0%";
+    document.body.style['overflow-y'] = 'auto';
+        $('#goSidenav-mask').fadeOut(200);
+ $('.closebtn').fadeOut(60);
+};
+    
+    
+     /*手機版展開動作*/   
+    
+    /*Resize重置展開*/
+ 
+     $(document).ready(function(){
+         
+    var headertimer
+$(window).resize(function(){
+    
+    window.clearTimeout(headertimer);
+    
+      headertimer = window.setTimeout(function() {
+         //   $('#go-header').load('header.html');
+          console.log('header-reload');
+    }, 1000)
+    
+});
+
+        
+
+             });
+    /*Resize重置展開*/
+    
+    
+</script>
+</body>
+
+</html>

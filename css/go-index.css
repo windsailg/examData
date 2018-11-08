@@ -1,0 +1,1145 @@
+
+/* reset */
+body {
+       
+    margin: 0; padding: 0px; 
+   /* overflow: hidden;*/
+}
+
+
+/*隱藏卷軸並可捲動*/
+/*
+::-webkit-scrollbar{
+    display: none;
+  }
+*/
+
+#go-index {
+     font-family: 'cwTeXYen','微軟正黑體', 'Arial' , sans-serif ;
+    float: left;
+    display: block;
+    z-index: 10;
+    width:100%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+
+
+
+#go-index .logo{
+    box-sizing: border-box;
+    display:inline-block;
+    float:left;
+    margin:20px 0 0 0 ;
+    width:15%;
+}
+
+/*覆蓋slider連結區塊*/
+#go-index .sliderbox{
+display:block;
+}
+    #go-index .sliderbox .bx-wrapper img {
+    max-width: 200%;
+    min-width: 100%;
+    display: block;
+    }
+#go-index .menu_block {
+    width: 220px;
+    height: 500px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left:16.5%;
+    box-shadow: 0px -10px 20px rgba(100,100,100,.3);
+}
+
+#go-index .menu_block ul {
+padding:0 0 0 18px;
+}
+
+ .menu_block ul i{
+display:inline-block; 
+    width:24px;
+    margin: 0 auto 0 ;
+    padding:0 0 0 5px;
+    color: #555;
+     line-height: 30px;
+     
+}
+
+#go-index .menu_block p {
+font-weight: 400;
+    height:28px;
+    color:#070707;
+    font-size: 17px;
+white-space: nowrap;
+}
+
+#go-index .menu_block span {
+font-weight: 400;
+    margin:0 3px 0 0;
+    color: #a0a0a0;
+}
+
+#go-index .menu_block .list {
+    background-color:#ffffff;
+    width: 220px;
+    height: 100%;
+    float: left;
+    list-style: none;
+}
+
+#go-index .menu_block .list li {
+    padding: 0 0;
+    line-height: 32px;
+    color: #555;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 155px;
+    list-style: none;
+}
+
+
+.menu_block .list li p span {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-left: 3px;
+        color:#0f0f0f;
+}
+
+.main_box_1 {
+    width: calc(50% - 20px);
+    float: left;
+    margin: 5px 10px;
+}
+
+.main_box_3 {
+    width: calc(33.3% - 20px);
+    float: left;
+    margin: 5px 10px;
+}
+
+.main_box_4 {
+    width: calc(25% - 20px);
+    float: left;
+    margin: 5px 10px;
+}
+
+.main_box_1 h3, .main_box_3 h3 ,.main_box_4 h3 {
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.main_box_1 h3 a:hover ,.main_box_3 h3 a:hover ,.main_box_4 h3 a:hover {
+    color: #F29001;
+}
+
+.main_box_1 p, .main_box_3 p, .main_box_4 p {
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #fff;
+    line-height: 10px;
+    margin-bottom: 0px
+}
+
+.main_box_1 p:hover,.main_box_3 p:hover,.main_box_4 p:hover {
+    border-bottom: 1px solid #555;
+}
+
+.main_box_2 h3 a {
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    float: left;
+    width: calc(33% - 15px);
+    margin-right: 15px
+}
+
+.main_box_2 h3 a:hover {
+    color: #F29001;
+    border-bottom: 1px solid #BC8A46;
+}
+
+
+/*slider UX*/
+.menu_block .list li {
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.menu_block .list li:hover {
+
+    color: #F29001;
+}
+#go-index .menu_block .list p:hover i{
+color: #F29001;
+}
+#go-index .menu_block .list li p:hover span{
+   color: #F29001;
+}
+#go-index .menu_block .list li:hover p{
+    color: #F29001;
+}
+
+.menu_block .list li:hover .main {
+    visibility: visible;
+    z-index: 100;
+}
+
+.menu_block .list li .main {
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 600px;
+    height:500px ;
+    background-color: #fff;
+    display: block;
+    visibility: hidden;
+    z-index: 15;
+    color: #555;
+    padding: 20px;
+    /*影響延遲滑過的關鍵*/
+    transition: .3s ease-in;
+    box-sizing: border-box;
+}
+
+/*slider UX*/
+
+/*覆蓋slider連結區塊*/
+
+
+/*考試區塊 ExamZone 開始*/
+#go-index .examZone.dp-mob{
+    display:none;
+}
+#go-index .examZone{
+    width:85%;
+    display:block;
+    margin:0 auto;
+}
+#go-index .examZone .ez-col{
+    display:inline-block;
+  background-color: #ffffff;
+    width:20%;
+    float: left;
+    padding:0px 0 22px 10px;
+    box-sizing: border-box;
+        font-family: 'Arial' , 'century gothic' , '微軟正黑體'  ;
+}
+#go-index .examZone img{
+    width:50px;
+    float: left;
+}
+#go-index .examZone .ez-col h1{
+     display:block;
+    font-size: 12px;
+     float: left;
+ margin:0 0 0 10px;
+}
+#go-index .examZone .ez-col span{
+     display:block;
+    font-size: 10px;
+    float: left;
+    margin:0 0 0 10px;
+}
+#go-index .examZone .ez-col i{
+     display:block;
+    font-size: 14px;
+    float: left;
+    position:relative;
+    bottom: 9px;
+    margin:0 0 0 10px;
+}
+/*考試區塊 ExamZone 結束*/
+
+/*--------------------------------------------------------------------------------------------*/
+/*考試時程 ExamSchedule 開始*/
+#go-index .examSchedule{
+margin:0;
+    width:100%;
+}
+#go-index .es-container{
+margin:0 auto;
+    width:80%;
+}
+#go-index .es-title img{
+    margin:10px auto;
+    width:220px;
+}
+#go-index .es-function img{
+    margin:45px auto;
+    width:650px;
+}
+#go-index .es-function.dp-mob{
+        display:none;
+    }
+
+/*filpsnap 控制CSS Start*/
+
+
+#go-index .examSchedule .viewport {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */
+}
+
+
+
+
+#go-index .examSchedule .flipsnap {
+    width: 2800px; /* 320px(item width) * 3(item count) */
+}
+
+#go-index .examSchedule .flipsnap:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#go-index .examSchedule .item {
+
+    float: left;
+    width: 280px;
+    height:280px;
+    font-size: 10px;
+    text-align: center;
+    padding: 0px 0;
+    /*
+    border: 5px solid #fff3cb;
+    */
+    box-sizing: border-box;
+    font-family: 'century gothic' , '微軟正黑體' , 'Arial';
+}
+
+#go-index .item .es-date{
+        background-image: url(../img/es-date.png);
+  background-size:contain;
+     background-repeat:no-repeat;
+ float: left;
+    width: 280px;
+    height:280px;
+padding: 0px 0;
+     box-sizing: border-box;
+}
+
+#go-index .item .es-month{
+        background-image: url(../img/es-month.png);
+  background-size:contain;
+     background-repeat:no-repeat;
+ float: left;
+    width: 280px;
+    height:280px;
+padding: 0px 0;
+     box-sizing: border-box;
+}
+
+#go-index .item .es-month h2{
+margin:0px;
+    font-size: 16px;
+    font-weight:600 ;
+    color: #7c7c7c;
+}
+
+/*月份鼓勵標語區塊外框START*/
+#go-index .item .es-encourage{
+    width:60%;
+    background-color: #e5e5e5;
+    margin:0px auto 0 ;
+    padding:8px 15px ;
+    font-size: 16px;
+}
+
+#go-index .item .es-encourage-shape{
+margin:20px 0 -5px 0;
+width:0px;
+height:0px;
+border-width:20px;
+border-style:solid;
+border-color:transparent transparent #e5e5e5 transparent ;
+display:inline-block;
+}
+/*月份鼓勵標語區塊外框END*/
+
+
+#go-index .examSchedule .viewport {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-transform: translateZ(0); /* Optional: When heavy at iOS6+ */
+}
+
+#go-index .swiper-container {
+      width: 100%;
+    height: 340px
+    }
+#go-index .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+
+#go-index .swiper-slide .es-date{
+        background-image: url(../img/es-date-mob.png);
+  background-size:contain;
+     background-repeat:no-repeat;
+ float: left;
+    width: 280px;
+    height:280px;
+padding: 0px 0;
+     box-sizing: border-box;
+}
+
+
+
+#go-index .swiper-slide .es-month{
+        background-image: url(../img/es-month.png);
+  background-size:contain;
+     background-repeat:no-repeat;
+ float: left;
+    width: 280px;
+    height:280px;
+padding: 0px 0;
+     box-sizing: border-box;
+
+}
+
+#go-index .swiper-slide .es-month h2{
+margin:0px;
+    font-size: 16px;
+    font-weight:600 ;
+    color: #7c7c7c;
+    
+}
+#go-index .swiper-slide .es-month img{
+width: 100%;
+    display:block;
+    border-radius: 4px;
+    margin:10px 0 ;
+}
+/*月份鼓勵標語區塊外框START*/
+#go-index .swiper-slide .es-encourage{
+    width:60%;
+    background-color: #e5e5e5;
+    margin:0px auto 0 ;
+    padding:8px 15px ;
+    font-size: 16px;
+}
+
+#go-index .swiper-slide .es-encourage-shape{
+margin:20px 0 -5px 0;
+width:0px;
+height:0px;
+border-width:20px;
+border-style:solid;
+border-color:transparent transparent #e5e5e5 transparent ;
+display:inline-block;
+}
+/*月份鼓勵標語區塊外框END*/
+
+#go-index .swiper-slide .containBox{
+    box-sizing: border-box;
+   border:1px solid transparent;
+    width:70%;
+    margin:40px auto 0;
+    height: 180px;
+    box-shadow: 0px 0px 25px rgba(50,50,50,.15);
+}
+#go-index .swiper-slide h2{
+    margin:29px 0 0 0;
+    font-size: 19px;
+    font-weight:normal;
+    color: #1f1f1f;
+}
+#go-index .swiper-slide h1{
+margin:18px auto 0 ;
+    font-size: 21px;
+    font-weight: 600;
+    color: #863f2a;
+white-space: nowrap;
+    text-overflow:clip;
+    overflow: hidden;
+    width:156px;
+}
+#go-index .swiper-slide ul{
+    display: inline-block;
+list-style: none;
+    margin: 5px auto 8px  ;
+    padding: 0;
+    clear: both;
+    font-size: 15px;
+
+}
+#go-index .swiper-slide ul br{
+display:none;
+}
+#go-index .swiper-slide i{
+    text-align: left;
+    width:16px;
+    
+}
+#go-index .swiper-slide span{
+    color:#863f2a;
+    margin:0 6px 0 0;
+}
+#go-index .swiper-slide li{
+    text-align: left;
+    margin: 4px auto 0;
+}
+#go-index .swiper-slide .es-acions {
+    margin:0 auto;
+    display:block;
+    width:90%;
+}
+#go-index .swiper-slide .es-acions img{
+    display:inline-block;
+    width: 30px;
+    margin:6px 2px 0 ;
+    border-radius: 3px;
+}
+
+#go-index .item h2{
+    margin:32px;
+    font-size: 19px;
+    font-weight:normal;
+    color: #1f1f1f;
+}
+#go-index .item h1{
+margin:55px auto 0 ;
+    font-size: 19px;
+    font-weight: 600;
+    color: #863f2a;
+}
+#go-index .item ul{
+    float: left;
+    display: inline-block;
+width:100%;
+list-style: none;
+    margin: 5px 0 8px  19px;
+    clear: both;
+    font-size: 14px;
+}
+#go-index .item i{
+    text-align: left;
+    margin: 0 2px 0 0;
+}
+#go-index .item span{
+    color:#863f2a;
+    margin:0 6px 0 0;
+}
+#go-index .item li{
+    text-align: left;
+    margin: 4px auto 0;
+}
+#go-index .item .es-acions {
+    float: left;
+    display:inline-block;
+    width: 100%;
+    margin-left:60px;
+}
+#go-index .item .es-acions img{
+    float: left;
+    display:inline-block;
+    width: 30px;
+    margin:6px 12px 0 0px;
+    border-radius: 3px;
+}
+
+
+
+/*filpsnap 控制CSS END*/
+
+
+
+/*考試時程 ExamSchedule 結束*/
+/*--------------------------------------------------------------------------------------------*/
+
+/*影音專區 VideoZone 開始*/
+#go-index .videoZone{
+margin:0px 0 0 0;
+    width:100%;
+    height:650px;
+    background-image: url(../img/video-block.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#go-index .videoZone .vz-title {
+        color: #ffffff;
+    text-align: center;
+    width:80%;
+    margin:0 auto;
+    padding:220px 0 0 0 ;
+    display:block;
+}
+#go-index .videoZone .vz-title h2{
+    font-size: 5px;
+    color: #fff3cb;
+letter-spacing:16px;
+    margin:0 auto;
+     text-align: center;
+       display:block;
+}
+#go-index .videoZone .vz-title h1 {
+    font-size: 33px;
+    font-weight: 600;
+    text-indent: 40px;
+    letter-spacing:40px;
+    color: #ffffff;
+    text-align: center;
+    margin:0;
+}
+#go-index .videoZone .vz-title p{
+    font-size: 16px;
+        line-height: 30px;
+    margin:50px auto 0 0;
+     text-align: center;
+        text-overflow: ellipsis;
+}
+
+
+#go-index   .vz-slider-container{
+    display:block;
+position:relative;
+    top:-90px;
+z-index: 10;
+width:1060px;
+margin:-115px auto 50px; 
+}
+
+#go-index .vz-slider-container .bx-wrapper .bx-prev {
+
+    top: 43%;
+}
+#go-index .vz-slider-container .bx-wrapper .bx-next {
+
+    top: 43%;
+}
+
+#go-index   .vz-slider-container .vzs-videoBlock{
+    box-shadow: 0px 10px 30px rgba(100,100,100,.3);
+    z-index: 20;
+    display:block;
+position: absolute;
+ 
+}
+
+#go-index   .vz-slider{
+   margin:0 0 0 20px;
+
+}
+
+
+
+#go-index  .vzs-videoBlock .vzb-container {
+    display:block;
+   background-color: #ffffff;
+    padding:0 20px 0 ;
+}
+
+
+#go-index  .vzs-videoBlock  .vz-mask {
+            width:100%;
+            position:relative;
+            overflow: hidden;
+       text-align: center; 
+    cursor: pointer;
+
+}
+#go-index  .vzs-videoBlock  .vz-mask .vz-mask-playBtn{
+    margin:0 auto;
+    display: block;
+    top:calc(50% - 40px);
+    left:calc(50% - 34px);
+width:80px;
+ position:absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+#go-index  .vzs-videoBlock  .vz-mask::after{
+            position:absolute;
+            left: 0;
+            top:0;
+            display: block;
+    opacity: 1;
+            width:100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            content: attr(data-text);
+            transition:all .4s ease;
+            color: #FFF;
+    pointer-events: none;
+    
+}
+#go-index  .vzs-videoBlock  .vz-mask:hover::after{
+    opacity: 0;
+        }
+/*
+vz-mask-playBtn
+*/
+
+
+#go-index  .vzs-videoBlock .vzb-container h1{
+font-size: 19px;
+    padding: 18px 0 0 0;
+    color: #a3907d;
+    margin:0 0 0 0;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+#go-index  .vzs-videoBlock .vzb-container p{
+    height:45px;
+        color:#050505;
+    font-weight: 500;
+    font-size: 16px;
+    margin:7px 0 0 0 ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#go-index  .vzs-videoBlock .vzb-container span{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:4px 0 28px ;
+    height: 18px;
+}
+
+#go-index  .vzs-videoBlock .vzb-container span a{
+        color:#000000;
+
+font-size: 16px;
+    color: #ea8b00;
+}
+
+#go-index  .vz-viewMore{
+margin:15px auto 0;
+    display:block;
+    background-color: #717171;
+    color:#ffffff;
+    width:200px;
+    height:60px;
+    letter-spacing: 7px;
+    box-shadow: 10px 10px 20px rgba(0,0,0, .2);
+    border:1px solid rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    transition: all .3s;
+}
+#go-index .vz-viewMore:hover{
+cursor: pointer;
+    background-color: #ffffff;
+    color:#3c3c3c;
+}
+
+
+/*考試時程 VideoZone 結束*/
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+/*文章專區 articleZone 開始*/
+
+#go-index .articleZone{
+    font-family: '微軟正黑體';
+    width:100%;
+    margin:-40px auto 60px ;
+display:block;
+    float: left;
+}
+
+#go-index .az-container{
+    width:1250px;
+    margin:0 auto 40px;
+}
+
+#go-index .articleZone .az-col2 {
+    display: block;
+    float:left;
+    width: 50%;
+    height: 440px;
+    margin:0 0 40px 0;
+}
+#go-index .articleZone .news{
+    box-sizing: border-box;
+   display:inline-block;
+padding: 0 80px 0;
+    clear:both;
+    height: 420px;
+}
+
+
+#go-index .articleZone .news .az-title{
+    float: left;
+    width:100%;
+margin:10px  0 20px 0;
+}
+    
+    #go-index .articleZone .news .az-title h1{
+float: left;
+ letter-spacing:10px ;
+font-size:20px;
+font-weight: 600;
+color:#858585;
+margin:10px  0 10px 0;
+
+}
+#go-index .articleZone .news .az-decoration-string{
+    display: inline-block;
+    float: left;
+    border-bottom: 1px solid #F29001;
+width: 50px;
+    height: 1px;
+    margin:24px 0px 20px   8px;
+}    
+
+
+#go-index .articleZone .news .az-contain{
+    display:inline-block;
+    float:left;
+    margin:0 0 18px 0;
+}
+
+#go-index .articleZone .news .az-contain i{
+display:inline-block;
+    width:16px;
+    float:left;
+    margin:0;
+    padding:0px 0 0 0;
+     color:#863f2a;
+}
+#go-index .articleZone .news .az-contain h1{
+display:inline-block;
+    font-weight: 600;
+    width:92px;
+     font-size: 15px;
+    height: 18px;
+    float:left;
+    margin:0px 5px 0 0;
+    color:#e28600;
+    overflow: hidden;
+    box-sizing: border-box;
+    white-space:nowrap;
+}
+#go-index .articleZone .news .az-contain h2{
+display:inline-block;
+    width:340px;
+    float:left;
+    font-size: 15px;
+height: 18px;
+     font-weight: 600;
+    margin:0;
+    padding: 0;
+    color:#b17f70;
+    overflow: hidden;
+   text-overflow:ellipsis;
+
+}
+
+#go-index .articleZone .news .az-contain p{
+display:block;
+    font-size: 14px;
+    margin:5px 0 0px 0;
+    line-height:20px;
+    height:40px;
+    font-weight: 500;
+  overflow: hidden;
+   text-overflow:ellipsis;
+    box-sizing: border-box;
+    float:left;
+    color:#333333;
+}
+
+#go-index .articleZone .hotnews{
+    box-sizing: border-box;
+padding: 0 0 0 80px;
+     display:inline-block;
+    clear:both;
+     height: 420px;
+}
+#go-index .articleZone .hotnews .az-title{
+
+font-weight: 600;
+margin:10px  0 20px 0;
+    font-size:22px;
+font-weight: 600;
+color:#858585;
+}
+
+#go-index .articleZone .hotnews .az-title{
+    float: left;
+    width:100%;
+margin:10px  0 20px 0;
+}
+    
+    #go-index .articleZone .hotnews .az-title h1{
+float: left;
+ letter-spacing:10px ;
+font-size:20px;
+font-weight: 600;
+margin:10px  0 10px 0;
+}
+#go-index .articleZone .hotnews .az-decoration-string{
+    display: inline-block;
+    float: left;
+    border-bottom: 1px solid #F29001;
+width: 50px;
+    height: 1px;
+    margin:24px 0px 20px   8px;
+}    
+
+#go-index .articleZone .hotnews .az-contain{
+    width:100%;
+    display:inline-block;
+    float:left;
+    margin:0 0 30px 0;
+}
+#go-index .articleZone .hotnews img{
+    width:90px;
+    height:55px;
+    display:inline-block;
+    float:left;
+}
+
+#go-index .articleZone .hotnews .az-contain-block{
+     display:inline-block;
+    float:left;
+    width:66%;
+     margin:0 0 0 15px;
+    height:48px;
+    
+}
+
+#go-index .articleZone .hotnews .az-contain-block h4{
+     display:inline-block;
+    float:left;
+    font-size: 16px;
+    height:20px;
+    margin:0 0 0 0px;
+    font-weight: 600;
+    color:#7b7b7b;
+    text-overflow: clip;
+    overflow: hidden;
+    
+}
+#go-index .articleZone .hotnews .az-contain-block p{
+     display:inline-block;
+    float:left;
+    font-size: 13px;
+    line-height: 20px;
+    margin:5px 0 0 0px;
+    text-overflow: clip;
+    overflow: hidden;
+    height:40px;
+    color:#292929;
+}
+
+#go-index .articleZone  .az-more{
+    width:100%;
+     display:inline-block;
+    float:left;
+}
+#go-index .az-more button{
+background-color:#ffffff;
+    border:1px solid  rgba( 0,0,0,.5);
+    width:100px;
+    height:40px;
+    display:block;
+    float:right;
+transition:.2s all ;
+    margin:10px 90px 0 0;
+}
+
+#go-index .az-more button:hover{
+color: #ffffff;
+background-color: #F29001;
+    cursor: pointer;
+}
+
+/*考試時程 articleZone 結束*/
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+/*學員心得專區 experienceZone 開始*/
+
+#go-index .experienceZone{
+    display:block;
+    margin:0 0 50px 0;
+}
+#go-index .experienceZone  .bx-wrapper{
+position: inherit;
+}
+
+
+#go-index .experienceZone  .bx-wrapper .bx-prev{
+        background: url(../img/controls-exz.png) no-repeat 0 -32px;
+}
+
+#go-index .experienceZone  .bx-wrapper .bx-prev:hover,
+#go-index .experienceZone  .bx-wrapper .bx-prev:focus
+{
+  background-position: 0 0;
+}
+
+
+#go-index .experienceZone  .bx-wrapper .bx-next{
+        background: url(../img/controls-exz.png) no-repeat -43px -32px;
+}
+
+#go-index .experienceZone  .bx-wrapper .bx-next:hover,
+#go-index .experienceZone  .bx-wrapper .bx-next:focus{
+  background-position: -43px 0;
+}
+
+
+
+#go-index .experienceZone .exz-mask{
+    position:absolute;
+    background: linear-gradient(-70deg, transparent 60%, #000000 0);
+    opacity:.5;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    font-size:0px;
+    pointer-events: none
+}
+
+#go-index .experienceZone .exz-videoBlock .exz-container{
+    position:absolute;
+    margin-left: 14%;
+    margin-right: auto;
+    display:block;
+    color:#ffffff;
+    left: 0px;
+    right: 0;
+    top: 20%;
+    box-sizing: border-box;
+    width:20%;
+}
+
+#go-index .experienceZone .exz-videoBlock .exz-container h1{
+display: block;
+width:100%;
+font-size:30px;
+margin:0 0 25px 0;
+    text-overflow: clip;    
+    overflow: hidden;
+}
+
+#go-index .experienceZone .exz-videoBlock .exz-container h2{
+display: block;
+font-size:22px;
+font-weight: 0;
+margin:0 0 0 0;
+}
+#go-index .experienceZone .exz-videoBlock .exz-container h3{
+font-size:20px;
+font-weight: 0;
+margin:0 0 0 0;
+display: block;
+text-overflow: clip;    
+overflow: hidden;
+}
+
+#go-index .experienceZone .exz-videoBlock .exz-container h3 span{
+color:#ff9922;
+}
+
+#go-index .experienceZone .exz-videoBlock .exz-container p{
+    display: block;
+    height:76px;
+font-size:14px;
+text-overflow: clip;    
+    overflow: hidden;
+    
+}
+
+#go-index .experienceZone .exz-videoBlock .exz-container button{
+font-size:16px;
+    width:120px;
+    height:40px;
+    border-radius: 3px;
+    border: 0px none ;
+    color:#ffffff;
+    background-color: #F29001;
+    transition:.2s all;
+    margin:28px 0 0 0;
+    font-family: '微軟正黑體';
+    letter-spacing: 4px;
+}
+#go-index .experienceZone .exz-videoBlock .exz-container button:hover{
+cursor:pointer;
+    border: 0px none ;
+    color:#863f2a;
+    background-color: #ffffff;
+}
+
+
+
+/*考試時程 experienceZone 結束*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+/*考試時程 bx-sliderCSS外部控制 */
+#go-index .bx-viewport{
+    padding-bottom:50px;
+}
+
+
+ #go-index .es-loader  .swiper-button-prev{
+         background-image: url(../img/es-btn-left.svg);
+    display:block;
+}
+ #go-index .es-loader  .swiper-button-prev:hover{
+         background-image: url(../img/es-btn-left2.svg);
+    display:block;
+}
+
+ #go-index .es-loader  .swiper-button-next{
+         background-image: url(../img/es-btn-right.svg);
+     display:block;
+}
+ #go-index .es-loader  .swiper-button-next:hover{
+         background-image: url(../img/es-btn-right2.svg);
+     display:block;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+    .clearfix{
+        clear: both;
+    }
+
+
+
+
